@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "449844938614",
+    "project_id": "mobiledevopsdemo",
+    "storage_bucket": "mobiledevopsdemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449844938614:android:79526f6a7cc20fc84d1c57",
+        "android_client_info": {
+          "package_name": "com.technerdy.mobiledevopsdemo.mobile_devops"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449844938614-88fbn4qv0ju96js8lb3a7j33tu3hin28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpaJZ6hYflHfZyAx8rT6yrqjDQP4HxRd4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449844938614-88fbn4qv0ju96js8lb3a7j33tu3hin28.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "449844938614-ca9h2vs8i5di20as07uqrv6fpu1e8cm5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.technerdy.mobiledevopsdemo.mobileDevops"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
