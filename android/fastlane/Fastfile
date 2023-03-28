@@ -46,7 +46,7 @@ platform :android do
   firebase_app_distribution(
    app: "1:449844938614:android:79526f6a7cc20fc84d1c57",
    groups: "tester_group",
-   release_notes: "Fastlane testing",
+   release_notes: "Fastlane testing with jenkins",
 #    android_artifact_path: "../build/app/outputs/bundle/release/app-release.aab ",
    android_artifact_path: "../build/app/outputs/flutter-apk/app-release.apk",
    firebase_cli_token: "1//0gRzkY7PndLikCgYIARAAGBASNwF-L9IrbDTx8DVLVGOGFH81o7HB2vDWwgIDYH-oZEO2sK6TSvFhPTGoNGc215eLIm9tRY4Gte0",

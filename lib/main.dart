@@ -59,6 +59,10 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            const SizedBox(height: 15),
+            const Text(
+              'Change to be visible after jenkins build',
+            ),
           ],
         ),
       ),
