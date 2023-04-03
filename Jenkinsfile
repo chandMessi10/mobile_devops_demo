@@ -50,7 +50,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh "$FASTLANE_HOME/bin/fastlane deploy"
+                sh "fastlane deploy"
             }
         }
     }
