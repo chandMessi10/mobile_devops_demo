@@ -43,26 +43,13 @@
 
 pipeline {
     agent any
+    environment {
+        FASTLANE_HOME = '/var/lib/gems/3.0.0/gems/fastlane-2.212.1'
+    }
     stages {
-//         stage('Setup') {
-//             steps {
-//                 echo "Setup"
-//                 // Install bundler in order to use fastlane
-//                 sh "gem install bundler"
-//                 // set the local path for bundles in vendor/bundle
-//                 sh "bundle config set --local path 'vendor/bundle'"
-//                 // install bundles if they're not installed
-//                 sh "bundle check || bundle install --jobs=4 --retry=3"
-//             }
-//         }
         stage('Build') {
             steps {
-                /* echo "Building for App distribution"
-                sh "bundle exec fastlane deploy" */
-               /*  echo "Checking for flutter command"
-                sh "flutter --version" */
-                echo "Checking for fastlane command new variable"
-                sh "fastlane --version"
+                sh "$FASTLANE_HOME/bin/fastlane lane_name"
             }
         }
     }
