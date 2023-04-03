@@ -42,11 +42,11 @@ pipeline {
 pipeline {
     agent any
     stages {
-        stage('Check FASTLANE_HOME') {
+        stage('Build') {
             steps {
 //                 sh 'echo $FASTLANE_HOME'
                 sh 'cd android'
-                sh '$FASTLANE_HOME --version'
+                sh '/home/technerdy/.gem/ruby/3.0.0/bin/fastlane deploy'
             }
         }
     }
