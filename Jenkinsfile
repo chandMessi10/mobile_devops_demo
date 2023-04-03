@@ -61,7 +61,7 @@ pipeline {
                 sh "bundle exec fastlane deploy" */
                /*  echo "Checking for flutter command"
                 sh "flutter --version" */
-                echo "Checking for fastlane command"
+                echo "Checking for fastlane command new variable"
                 sh "fastlane --version"
             }
         }
