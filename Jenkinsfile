@@ -45,7 +45,7 @@ pipeline {
         stage('Check FASTLANE_HOME') {
             steps {
                 sh 'echo $FASTLANE_HOME'
-                sh '$FASTLANE_HOME/fastlane --version'
+                sh '$FASTLANE_HOME --version'
             }
         }
     }
