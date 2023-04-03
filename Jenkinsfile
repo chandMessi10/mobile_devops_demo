@@ -22,25 +22,7 @@
     }
 } */
 
-/* pipeline {
-  agent any
-
-  stages {
-    stage('Install Fastlane') {
-      steps {
-        sh 'gem install fastlane'
-      }
-    }
-    // Add additional stages as needed
-  }
-
-  post {
-    always {
-      cleanWs()
-    }
-  }
-} */
-
+/*
 pipeline {
     agent any
     environment {
@@ -51,6 +33,18 @@ pipeline {
         stage('Build') {
             steps {
                 sh "fastlane deploy"
+            }
+        }
+    }
+} */
+
+
+pipeline {
+    agent any
+    stages {
+        stage('Check FASTLANE_HOME') {
+            steps {
+                sh 'echo $FASTLANE_HOME'
             }
         }
     }
