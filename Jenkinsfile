@@ -44,12 +44,12 @@
 pipeline {
     agent any
     environment {
-        FASTLANE_HOME = '/var/lib/gems/3.0.0/gems/fastlane-2.212.1'
+        FASTLANE_HOME = '$HOME/var/lib/gems/3.0.0/gems/fastlane-2.212.1'
     }
     stages {
         stage('Build') {
             steps {
-                sh "$FASTLANE_HOME/bin/fastlane lane_name"
+                sh "$FASTLANE_HOME/bin/fastlane deploy"
             }
         }
     }
