@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-pipeline {
+/* pipeline {
     agent any
 
     stages {
@@ -20,7 +20,7 @@ pipeline {
             }
         }
     }
-}
+} */
 
 /* pipeline {
   agent any
@@ -41,9 +41,9 @@ pipeline {
   }
 } */
 
-// pipeline {
-//     agent any
-//     stages {
+pipeline {
+    agent any
+    stages {
 //         stage('Setup') {
 //             steps {
 //                 echo "Setup"
@@ -55,11 +55,11 @@ pipeline {
 //                 sh "bundle check || bundle install --jobs=4 --retry=3"
 //             }
 //         }
-//         stage('Build') {
-//             steps {
-//                 echo "Building for App distribution"
-//                 sh "bundle exec fastlane deploy"
-//             }
-//         }
-//     }
-// }
+        stage('Build') {
+            steps {
+                echo "Building for App distribution"
+                sh "bundle exec fastlane deploy"
+            }
+        }
+    }
+}
