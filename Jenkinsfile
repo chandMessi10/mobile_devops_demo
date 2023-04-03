@@ -1,4 +1,17 @@
+#!/usr/bin/env groovy
+
 pipeline {
+    agent any
+    stages {
+        stage('Stage 1') {
+            steps {
+                echo 'Hello world!'
+            }
+        }
+    }
+}
+
+/* pipeline {
   agent any
 
   stages {
@@ -15,7 +28,7 @@ pipeline {
       cleanWs()
     }
   }
-}
+} */
 
 // pipeline {
 //     agent any
