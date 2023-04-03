@@ -44,7 +44,8 @@ pipeline {
     stages {
         stage('Check FASTLANE_HOME') {
             steps {
-                sh 'echo $FASTLANE_HOME testing again'
+//                 sh 'echo $FASTLANE_HOME'
+                sh 'cd android'
                 sh '$FASTLANE_HOME --version'
             }
         }
