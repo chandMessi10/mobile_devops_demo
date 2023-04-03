@@ -59,8 +59,10 @@ pipeline {
             steps {
                 /* echo "Building for App distribution"
                 sh "bundle exec fastlane deploy" */
-                echo "Checking for flutter command"
-                sh "flutter --version"
+               /*  echo "Checking for flutter command"
+                sh "flutter --version" */
+                echo "Checking for fastlane command"
+                sh "fastlane --version"
             }
         }
     }
