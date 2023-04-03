@@ -45,6 +45,7 @@ pipeline {
     agent any
     environment {
         FASTLANE_HOME = '/home/technerdy/var/lib/gems/3.0.0/gems/fastlane-2.212.1'
+        PATH = "$PATH:$FASTLANE_HOME/bin"
     }
     stages {
         stage('Build') {
