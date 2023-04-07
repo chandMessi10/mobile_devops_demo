@@ -41,12 +41,16 @@ pipeline {
 
 pipeline {
     agent any
+    environment {
+            FASTLANE_HOME = '/home/technerdy/var/lib/gems/3.0.0/gems/fastlane-2.212.1'
+            PATH = "$PATH:$FASTLANE_HOME/bin"
+        }
     stages {
         stage('Build') {
             steps {
 //                 sh 'echo $FASTLANE_HOME'
                 sh 'cd android'
-                sh '/home/technerdy/.gem/ruby/3.0.0/bin/fastlane deploy'
+                sh '/home/technerdy/var/lib/gems/3.0.0/gems/fastlane-2.212.1/bin/fastlane deploy'
             }
         }
     }
