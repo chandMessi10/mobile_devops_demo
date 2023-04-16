@@ -3,8 +3,8 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Build') {
+    node {
+        stage("Build") {
             sh script:'''
                       #!/bin/bash
                       cd ./android
