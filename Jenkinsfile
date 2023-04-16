@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 dir('android') {
-                    sh 'bundle exec fastlane deploy'
+                    sh 'fastlane deploy'
                 }
             }
         }
