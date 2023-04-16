@@ -17,6 +17,7 @@ dependencies:
   baato_api: ^1.0.2
   flutter_map: ^3.1.0
   latlong2: ^0.8.1
+  lottie: ^2.3.2
   cupertino_icons: ^1.0.3
 
 dev_dependencies:
