@@ -3,16 +3,13 @@
 pipeline {
     agent any
 
-    node {
-        stage("Build") {
-            sh script:'''
-                      #!/bin/bash
-                      cd ./android
-                      echo "inside android"
-                      cd ./fastlane
-                      echo "inside fastlane"
-
-            '''
+    stages {
+        stage('Build') {
+            steps {
+                sh 'cd ./android'
+                sh 'cd ./fastlane'
+                sh 'fastlane deploy'
+            }
         }
     }
 }
