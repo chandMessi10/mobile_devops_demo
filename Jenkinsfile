@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 dir('android') {
-                    sh 'chmod 777 gradlew'
+                    sh 'chmod +x gradlew'
                     sh 'fastlane deploy'
                 }
             }
